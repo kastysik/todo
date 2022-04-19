@@ -1,0 +1,41 @@
+.todo {
+  padding: 10px 15px;
+  border: 1px solid black;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-flow: column nowrap;
+
+  &__header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  &__name {
+    font-weight: bold;
+  }
+
+  &__todo {
+    background-color: #fde9d7;
+    border-color: #eaccaf;
+    color: darken(#eaccaf, 20%);
+  }
+
+  &__in-progress {
+    background-color: #d2f4fe;
+    border-color: #a8dae2;
+    color: darken(#a8dae2, 20%);
+  }
+
+  &__done {
+    background-color: #c9f8cf;
+    border-color: #7dd395;
+    color: darken(#7dd395, 20%);
+  }
+
+  &__content {
+
+  }
+}

@@ -1,31 +1,15 @@
-import { Todo, TodoStates } from '../../models/todo.model';
+import { Todo } from '../../models/todo.model';
+import TodoComponent from '../Todo/Todo';
+import './List.less';
 
-function List() {
-    const todos: Todo[] = [
-        {
-            id: 1,
-            name: 'Task 1',
-            comment: 'Dela po domy',
-            state: TodoStates.TODO
-        },
-        {
-            id: 2,
-            name: 'Task 2',
-            comment: 'Dela po rabote',
-            state: TodoStates.TODO
-        },
-        {
-            id: 1,
-            name: 'Task 3',
-            comment: 'Prigotovit edy',
-            state: TodoStates.IN_PROGRESS
-        },
-    ];
+interface ListProps {
+    todos: Todo[];
+}
+
+function List(props: ListProps) {
     return (
-        <div>
-            <div className="todo"></div>
-            <div className="in-progress"></div>
-            <div className="done"></div>
+        <div className="list">
+            {props.todos.map((todo, index) => (<TodoComponent key={index} todo={todo}></TodoComponent>))}
         </div>
     );
 }

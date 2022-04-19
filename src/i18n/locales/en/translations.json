@@ -1,0 +1,22 @@
+{
+  "common": {
+    "todo": "to do",
+    "in_progress": "in progress",
+    "done": "done",
+    "minor": "minor",
+    "medium": "medium",
+    "critical": "critical",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "todo_list": "Todo List"
+  },
+  "popup": {
+    "create_todo": "Create Todo",
+    "edit_todo": "Edit Todo",
+    "priority": "Priority"
+  },
+  "todo": {
+    "to_in_progress": "To In Progress",
+    "to_done": "To Done"
+  }
+}

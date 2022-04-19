@@ -1,0 +1,28 @@
+.priority-badge {
+  display: flex;
+  align-items: center;
+
+  &__minor, &__medium, &__critical {
+    @size: 10px;
+    width: @size;
+    height: @size;
+    border-radius: @size;
+    margin-right: 5px;
+  }
+
+  &__minor {
+    background-color: #2bcd42;
+  }
+
+  &__medium {
+    background-color: #fcbe33;
+  }
+
+  &__critical {
+    background-color: #fc615a;
+  }
+
+  &__name {
+    text-transform: capitalize;
+  }
+}
